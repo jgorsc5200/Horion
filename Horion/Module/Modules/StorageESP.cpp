@@ -38,6 +38,7 @@ void StorageESP::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
 		if (storageID == 458) DrawUtils::setColor(0.62, 0.31, 0.04, math);                 // Barrel
 		if (storageID == 205) DrawUtils::setColor(.49f, .17f, .95f, math);                 // Undyed Shulker Box
 		if (storageID == 218) DrawUtils::setColor(.08f, .91f, .99f, math);                 // Shulker Box
+		if (storageID == 154) DrawUtils::setColor(0.62, 0.31, 0.04, math);                 //hopper
 
 		DrawUtils::drawBox(chest.lower, chest.upper, (float)fmax(0.2f, 1 / (float)fmax(1, g_Data.getLocalPlayer()->eyePos0.dist(chest.lower))), true);  // Fancy math to give an illusion of good esp
 	}
